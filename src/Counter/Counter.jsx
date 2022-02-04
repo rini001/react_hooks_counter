@@ -14,6 +14,11 @@ function Counter() {
     // counter=counter+value
     console.log(counter)
   }
+  const handlemulIncrement=(value)=>{
+    setCounter(counter*value);
+    // counter=counter+value
+    console.log(counter)
+  }
   return (
     <>
     <h1>Counter</h1>
@@ -21,6 +26,7 @@ function Counter() {
   <div className="btn">
     <button onClick={()=>handleIncrement(1)}>ADD</button>
     <button onClick={()=>handleIncrement(-1)}>REDUCE</button>
+    <button onClick={()=>handlemulIncrement(2)}>DOUBLE</button>
     </div>
     </>
   );
